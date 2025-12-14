@@ -1,0 +1,28 @@
+<svg width="2205" height="1183" viewBox="0 0 2205 1183" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_nf_170_3)">
+<path d="M60.1299 60.1298C80.159 40.1006 127.945 50.4833 194.169 85.0009H2012.18C2077.59 51.1332 2124.78 41.0702 2144.65 60.9413C2201.91 118.197 2010.66 402.276 1717.49 695.45C1446.76 966.18 1183.78 1149.99 1100.02 1131.46C1011.43 1142.46 753.104 960.442 487.299 694.638C194.125 401.464 2.87564 117.386 60.1299 60.1298Z" fill="url(#paint0_linear_170_3)"/>
+</g>
+<defs>
+<filter id="filter0_nf_170_3" x="0" y="0" width="2204.78" height="1182.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="4.7619047164916992 4.7619047164916992" stitchTiles="stitch" numOctaves="3" result="noise" seed="5616" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(255, 255, 255, 0.25)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect1_noise_170_3">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+<feGaussianBlur stdDeviation="25" result="effect2_foregroundBlur_170_3"/>
+</filter>
+<linearGradient id="paint0_linear_170_3" x1="1253.81" y1="701.347" x2="1253.81" y2="1169.27" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B6A8FF"/>
+<stop offset="1" stop-color="#C1B4FF" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

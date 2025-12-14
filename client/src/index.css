@@ -16,7 +16,7 @@
     }
 
     button {
-        @apply cursor-pointer select-none;
+        @apply cursor-pointer select-none items-center p-1 rounded-lg transition hover:-translate-y-0.5 active:translate-0;
     }
 
     hr {
@@ -36,4 +36,54 @@
     .whiteBackground {
         @apply bg-white/90 shadow-xl rounded-2xl p-2
     }
+
+    .filter-button {
+        @apply truncate cursor-pointer bg-black/10 px-2 py-0.5 rounded text-gray-500 backdrop-blur-sm hover:bg-black/20 transition
+    }
+}
+
+@utility button-icon {
+    @apply flex gap-2 py-1 pl-2 pr-3
+}
+
+@utility button-secondary {
+    @apply bg-transparent border-2 border-slate-800 text-gray-800 hover:bg-gray-100 hover:border-slate-400 hover:text-gray-600 py-0.5
+}
+
+@utility button-primary {
+    @apply bg-slate-800 text-white hover:bg-slate-700
+}
+
+@utility button-red {
+    @apply bg-red-200 text-red-800
+}
+
+/* Scrollbar moderne et fine */
+::-webkit-scrollbar {
+    width: 6px;              /* largeur fine */
+    height: 6px;             /* si horizontal */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* invisible par défaut */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* léger, quasi transparent */
+    border-radius: 9999px;          /* arrondi max */
+    transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4); /* un peu plus visible au hover */
+}
+
+/* Pour Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.2) transparent;
+}
+
+* :hover {
+    scrollbar-color: rgba(0,0,0,0.4) transparent;
 }

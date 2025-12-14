@@ -1,29 +1,34 @@
 import React from 'react'
 import {BanknoteArrowUpIcon, Box, LayoutDashboard, Search} from "lucide-react";
-import HeaderLink from "./HeaderLink.jsx";
+import NavigationLink from "./NavigationLink.jsx";
 import Logo from "../logo.jsx";
+import {useLocation} from "react-router-dom";
 
-// les liens sur le header
+// Les liens de la barre de navigation
 const links = [
   {
-    text: "Dashboard", icon: <LayoutDashboard size={18}/>, link: "/"
+    text: "Dashboard", icon: <LayoutDashboard size={18}/>, link: "/", index: "dashboard"
   }, {
-    text: "Inventaire", icon: <Box size={18}/>, link: "/inventory"
+    text: "Inventaire", icon: <Box size={18}/>, link: "/inventory/product", index: "inventory"
   }, {
-    text: "Ventes", icon: <BanknoteArrowUpIcon size={18}/>, link: "/sales"
+    text: "Ventes", icon: <BanknoteArrowUpIcon size={18}/>, link: "/sale/new", index: "sale"
   }
 ]
 
-const Header = () => {
+const NavigationBar = () => {
+  const location = useLocation()
+
+  const isActive = (index) => location.pathname === "/" && index === "dashboard" || location.pathname.includes(index)
+
   return (
-    <div className="bg-white/90 p-2 rounded-full flex justify-between items-center">
+    <div className="bg-white/90 p-1 sm:p-2 rounded-full flex justify-between items-center">
       <div className="bg-white p-2 rounded-full shadow">
         <Search size={18}/>
       </div>
 
-      <div className="flex gap-4">
+      <div className="flex gap-1 sm:gap-4">
         {links.map(link => (
-          <HeaderLink text={link.text} icon={link.icon} link={link.link}/>
+          <NavigationLink text={link.text} icon={link.icon} link={link.link} active={isActive(link.index)}/>
         ))}
       </div>
 
@@ -31,8 +36,7 @@ const Header = () => {
         <Logo/>
       </div>
 
-
     </div>
   )
 }
-export default Header
+export default NavigationBar

@@ -1,7 +1,8 @@
 import React from 'react'
 import BackgroundSVG from "../backgroundSVG.jsx";
-import Header from "../header/Header.jsx";
+import NavigationBar from "../navigation bar/NavigationBar.jsx";
 import {Outlet} from "react-router-dom";
+import UIContainer from "../UIContainer.jsx";
 
 const RootLayout = () => {
   return (
@@ -10,16 +11,17 @@ const RootLayout = () => {
         <BackgroundSVG/>
       </div>
 
-      <div className="w-full flex-1 p-4 gap-4 flex flex-col">
-        <Header/>
+      <div className="w-full flex-1 p-2 sm:p-4 gap-2 sm:gap-4 flex flex-col">
+        <NavigationBar/>
 
         <div className="relative flex-1">
-          <div className="absolute top-0 left-0 bottom-0 right-0 overflow-auto">
+          <div className="flex gap-4 absolute inset-0">
             <Outlet/>
+
+            <UIContainer/>
           </div>
         </div>
       </div>
-
     </div>
   )
 }

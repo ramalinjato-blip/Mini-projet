@@ -1,14 +1,18 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 
-const HeaderLink = ({ text, icon, link }) => {
+const NavigationLink = ({ text, icon, link, active }) => {
+
   return (
-    <Link to={link} className="flex items-center gap-4 bg-gray-300 p-1 pr-4 rounded-full">
-      <div className="bg-white grid place-items-center p-1.5 rounded-full">
+    <Link
+      to={link}
+      className={`${active ? "w-60 bg-white" : ""} flex items-center gap-4 bg-gray-300 hover:bg-white w-fit md:w-40 md:hover:w-60 transition-all duration-700 p-1 sm:pr-4 rounded-full`}
+    >
+      <div className="bg-white w-18 sm:w-fit grid place-items-center p-1.5 rounded-full">
         {icon}
       </div>
-      {text}
+      <p className="hidden sm:block">{text}</p>
     </Link>
   )
 }
-export default HeaderLink
+export default NavigationLink

@@ -1,8 +1,13 @@
 import {createBrowserRouter} from "react-router-dom";
-import RootLayout from "../shared/components/layouts/RootLayout.jsx";
+import RootLayout from "../components/layouts/RootLayout.jsx";
 import DashboardPage from "../pages/dashboardPage.jsx";
-import InventoryPage from "../pages/inventoryPage.jsx";
-import SalePage from "../pages/salePage.jsx";
+import InventoryProductPage from "../pages/inventoryProductPage.jsx";
+import InventoryLayout from "../components/layouts/InventoryLayout.jsx";
+import InventoryOrderPage from "../pages/inventoryOrderPage.jsx";
+import InventoryAuditPage from "../pages/inventoryAuditPage.jsx";
+import SaleLayout from "../components/layouts/SaleLayout.jsx";
+import NewSalePage from "../pages/newSalePage.jsx";
+import SaleActivityPage from "../pages/saleActivityPage.jsx";
 
 // ici, on voit nos routes
 
@@ -13,9 +18,22 @@ const router = createBrowserRouter([
       // le dashboard sur /
       {index: true, Component: DashboardPage},
       // l'inventaire sur /inventory
-      {path: "inventory", Component: InventoryPage},
+      {
+        path: "inventory", Component: InventoryLayout,
+        children: [
+          { path: "product", Component: InventoryProductPage },
+          { path: "order", Component: InventoryOrderPage },
+          { path: "audit", Component: InventoryAuditPage }
+        ]
+      },
       // les ventes sur /sales
-      {path: "sales", Component: SalePage}
+      {
+        path: "sale", Component: SaleLayout,
+        children: [
+          { path: "new", Component: NewSalePage },
+          { path: "activity", Component: SaleActivityPage }
+        ]
+      }
     ]
   }
 ])

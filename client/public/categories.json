@@ -1,0 +1,11 @@
+[
+  { "id": 1, "name": "Boisson", "color": "blue" },
+  { "id": 2, "name": "Alcool", "color": "red" },
+  { "id": 3, "name": "Alimentaire", "color": "green" },
+  { "id": 4, "name": "Fruit", "color": "orange" },
+  { "id": 5, "name": "Boulangerie", "color": "yellow" },
+  { "id": 6, "name": "Épicerie", "color": "lime" },
+  { "id": 7, "name": "Hygiène", "color": "purple" },
+  { "id": 8, "name": "Maison", "color": "gray" },
+  { "id": 9, "name": "Boucherie", "color": "brown" }
+]

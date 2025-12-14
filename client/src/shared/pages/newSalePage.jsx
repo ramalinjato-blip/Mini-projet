@@ -1,19 +1,44 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Funnel, Search} from "lucide-react";
 import ProductSection from "../components/ProductSection.jsx";
-
-const popular = [
-  {
-    name: "Gouty beurre", price: 1500, category: "biscuit"
-  },{
-    name: "Gouty lait", price: 1500, category: "biscuit"
-  },{
-    name: "Good look mena", price: 400, category: "tabac"
-  },
-]
+import {fetchCategories, fetchProducts} from "../services/api.js";
+import {getPopularProducts} from "../services/utilities.js";
 
 const NewSalePage = () => {
   const [isOpen, setIsOpen] = useState(false)
+
+  const [popular, setPopularProducts] = useState([])
+  const [products, setProducts] = useState([])
+  const [categories, setCategories] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const [productsData, categoriesData] = await Promise.all([
+          fetchProducts(),
+          fetchCategories()
+        ])
+
+        setProducts(productsData)
+        setCategories(categoriesData)
+      } catch (error) {
+        console.error(error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    loadData().then(() => console.log("Data fetched correctly"))
+
+  }, [])
+
+  useEffect(() => {
+    if (products.length) {
+      const popular = getPopularProducts(products)
+      setPopularProducts(popular)
+    }
+  }, [products])
 
   return (
     <div className="h-full flex justify-center pt-20">
@@ -32,13 +57,13 @@ const NewSalePage = () => {
               <Funnel size={14}/>
               <span className="border-l border-gray-300 h-4 mx-2"/>
               <span className="filter-button">Boisson</span>
-              <span className="filter-button">Gouty beurre</span>
-              <span className="filter-button">Good look mena</span>
+              <span className="filter-button">Alimentaire</span>
+              <span className="filter-button">Alcool</span>
             </div>
 
             <div className="flex flex-col gap-2">
-              <ProductSection title={"Populaire en ce moment"} products={popular} />
-              <ProductSection title={"Populaire en ce moment"} products={popular} />
+              <ProductSection title={"Populaire en ce moment"} products={popular} categories={categories}/>
+              <ProductSection title={"Tout les produits"} products={products} categories={categories} />
             </div>
           </div>
         </div>

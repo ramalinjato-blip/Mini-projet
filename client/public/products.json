@@ -1,0 +1,33 @@
+[
+  { "id": 1, "name": "Bonbon anglais", "price": 4500, "categoryIds": [1, 3] },
+  { "id": 2, "name": "THB 65cl", "price": 3500, "categoryIds": [2, 1] },
+  { "id": 3, "name": "Ranovola", "price": 500, "categoryIds": [1] },
+  { "id": 4, "name": "Rhum Dzama", "price": 18000, "categoryIds": [2, 1] },
+  { "id": 5, "name": "Eau minérale locale", "price": 1500, "categoryIds": [1] },
+
+  { "id": 6, "name": "Riz Makalioka (1kg)", "price": 3200, "categoryIds": [3, 6] },
+  { "id": 7, "name": "Haricot sec", "price": 2500, "categoryIds": [3, 6] },
+  { "id": 8, "name": "Lentilles", "price": 3000, "categoryIds": [6, 3] },
+
+  { "id": 9, "name": "Akondro", "price": 800, "categoryIds": [3, 4] },
+  { "id": 10, "name": "Litchi", "price": 1500, "categoryIds": [3, 4] },
+  { "id": 11, "name": "Manga", "price": 1200, "categoryIds": [3, 4] },
+
+  { "id": 12, "name": "Ramanonaka", "price": 300, "categoryIds": [3, 5] },
+  { "id": 13, "name": "Mofo gasy", "price": 300, "categoryIds": [5, 3] },
+  { "id": 14, "name": "Koba", "price": 1000, "categoryIds": [3, 5] },
+
+  { "id": 15, "name": "Huile végétale locale", "price": 9000, "categoryIds": [6, 3] },
+  { "id": 16, "name": "Sucre brun gasy (1kg)", "price": 4200, "categoryIds": [6, 3] },
+  { "id": 17, "name": "Sel gemme", "price": 1000, "categoryIds": [6, 3] },
+
+  { "id": 18, "name": "Savon gasy", "price": 1200, "categoryIds": [7, 8] },
+  { "id": 19, "name": "Colgate", "price": 3500, "categoryIds": [7] },
+
+  { "id": 20, "name": "Charbon", "price": 3000, "categoryIds": [8] },
+  { "id": 21, "name": "Kifafa", "price": 3500, "categoryIds": [8] },
+
+  { "id": 22, "name": "Viande de zébu", "price": 16000, "categoryIds": [3, 9] },
+  { "id": 23, "name": "Poulet gasy", "price": 14000, "categoryIds": [9, 3] },
+  { "id": 24, "name": "Poisson sec", "price": 6000, "categoryIds": [9, 3] }
+]

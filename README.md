@@ -75,9 +75,8 @@ http://localhost:5173
 - Authentification (admin / vendeur)
 - Export des ventes (PDF / Excel)
 - prediction de ventes
-- suggestion automatique
 - Analyse de performance produit
-- systeme de recommandation
+- systeme de recommandation (PRIX, ET QUANTITE PRODUIT)
 
 ---
 

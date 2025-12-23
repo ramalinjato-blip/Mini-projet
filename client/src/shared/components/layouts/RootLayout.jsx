@@ -15,7 +15,7 @@ const RootLayout = () => {
         <NavigationBar/>
 
         <div className="relative flex-1">
-          <div className="flex gap-4 absolute inset-0">
+          <div className="flex absolute inset-0">
             <Outlet/>
 
             <UIContainer/>

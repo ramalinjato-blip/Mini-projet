@@ -10,9 +10,9 @@ const Drawer = ({children, onClose, isOpen, title}) => {
     <AnimatePresence onExitComplete={onClose}>
       {isVisible ? (
         <motion.div
-          initial={{ opacity: 0, minWidth: "0px" }}
-          animate={{ opacity: 1, minWidth: "384px" }}
-          exit={{ opacity: 0, minWidth: "0px" }}
+          initial={{ opacity: 0, minWidth: "0px", marginLeft: 0 }}
+          animate={{ opacity: 1, minWidth: "384px", marginLeft: "1rem" }}
+          exit={{ opacity: 0, minWidth: "0px", marginLeft: 0 }}
           transition={{
             duration: 0.8,
             delay: 0.3,

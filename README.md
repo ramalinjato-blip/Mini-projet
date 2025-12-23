@@ -1,7 +1,7 @@
 # Mini‑projet : Gestion de Vente
 ### status: Minimum valuable product
 
-Application de **gestion de vente** destinée aux **commerçants**. Objectif : avoir une vue claire sur l’inventaire, enregistrer des ventes rapidement et suivre les **statistiques journalières**.
+Application de **gestion de vente** destinée aux **commerçants**. Objectif : avoir une vue clair sur l’inventaire, enregistrer des ventes rapidement et suivre les **statistiques journalières**.
 
 ---
 
@@ -27,8 +27,8 @@ Application de **gestion de vente** destinée aux **commerçants**. Objectif : a
 ## Technologies utilisées
 
 - **Frontend** : React js (Vite)
-- **Backend** : Node.js / Express *(pas encore integrer)*
-- **Base de données** : PostgresSql *(pas encore integrer)*
+- **Backend** : Node.js / Express *(pas encore intégrer)*
+- **Base de données** : PostgresSql *(pas encore intégrer)*
 - **Gestion de projet** : npm
 
 ---
@@ -38,7 +38,7 @@ Application de **gestion de vente** destinée aux **commerçants**. Objectif : a
 ### 1: Cloner le projet
 ```bash
 git clone https://github.com/ramalinjato-blip/Mini-projet.git
-cd nom-du-projet
+cd Mini-projet
 ```
 
 ### 2: Installer les dépendances
@@ -76,7 +76,7 @@ http://localhost:5173
 - Export des ventes (PDF / Excel)
 - prediction de ventes
 - Analyse de performance produit
-- systeme de recommandation (PRIX, ET QUANTITE PRODUIT)
+- système de recommandation (PRIX, ET QUANTITÉ PRODUIT)
 
 ---
 

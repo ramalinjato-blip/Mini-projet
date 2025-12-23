@@ -61,7 +61,7 @@ const InventoryProductPage = () => {
         </button>
       </div>
 
-      <ul className="flex-1">
+      <ul className="flex-1 divide-y divide-gray-300">
         {products.map((product) => {
 
           const { label } = getCategoryTheme(product.category.color)

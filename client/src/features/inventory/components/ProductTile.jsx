@@ -3,7 +3,7 @@ import {Dot} from "lucide-react";
 
 const ProductTile = ({name, categoryName, label, stock, indice, color}) => {
   return (
-    <li className="relative flex items-center gap-2 py-2 px-1 h-10">
+    <li className="relative flex items-center gap-2 py-2 px-1 h-12">
       <span className="flex-1 truncate">{name}</span>
       <div className="min-w-25 md:min-w-32 flex justify-center">
         <span className={`w-fit flex items-center rounded py-0.5 px-2 text-xs font-semibold ${label}`}>{categoryName}</span>

@@ -1,13 +1,13 @@
 import {createBrowserRouter} from "react-router-dom";
 import RootLayout from "../components/layouts/RootLayout.jsx";
-import DashboardPage from "../pages/dashboardPage.jsx";
-import InventoryProductPage from "../pages/inventoryProductPage.jsx";
-import InventoryLayout from "../components/layouts/InventoryLayout.jsx";
-import InventoryOrderPage from "../pages/inventoryOrderPage.jsx";
-import InventoryAuditPage from "../pages/inventoryAuditPage.jsx";
-import SaleLayout from "../components/layouts/SaleLayout.jsx";
-import NewSalePage from "../pages/newSalePage.jsx";
-import SaleActivityPage from "../pages/saleActivityPage.jsx";
+import DashboardPage from "../../features/dashboard/dashboardPage.jsx";
+import InventoryProductPage from "../../features/inventory/pages/inventoryProductPage.jsx";
+import InventoryLayout from "../../features/inventory/components/InventoryLayout.jsx";
+import InventoryOrderPage from "../../features/inventory/pages/inventoryOrderPage.jsx";
+import InventoryAuditPage from "../../features/inventory/pages/inventoryAuditPage.jsx";
+import SaleLayout from "../../features/sales/components/SaleLayout.jsx";
+import NewSalePage from "../../features/sales/newSalePage.jsx";
+import SaleActivityPage from "../../features/sales/saleActivityPage.jsx";
 
 // ici, on voit nos routes
 

@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import {Funnel, Search} from "lucide-react";
-import ProductSection from "../components/ProductSection.jsx";
-import {fetchCategories, fetchProducts} from "../services/api.js";
-import {getPopularProducts} from "../services/utilities.js";
+import ProductSection from "./components/ProductSection.jsx";
+import {fetchCategories, fetchProducts} from "../../shared/services/api.js";
+import {getPopularProducts} from "../../shared/services/utilities.js";
 
 const NewSalePage = () => {
   const [isOpen, setIsOpen] = useState(false)

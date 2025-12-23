@@ -2,7 +2,7 @@ import React from 'react'
 import BackgroundSVG from "../backgroundSVG.jsx";
 import NavigationBar from "../navigation bar/NavigationBar.jsx";
 import {Outlet} from "react-router-dom";
-import UIContainer from "../UIContainer.jsx";
+import UIContainer from "../UI container/UIContainer.jsx";
 
 const RootLayout = () => {
   return (

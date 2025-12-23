@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductCard from "./ProductCard.jsx";
-import {getProductCategories} from "../services/utilities.js";
+import {getProductCategories} from "../../../shared/services/utilities.js";
 
 const ProductSection = ({ title, products, categories }) => {
   return (

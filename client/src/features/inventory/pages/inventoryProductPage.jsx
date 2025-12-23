@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {ArrowDownNarrowWide, Dot} from "lucide-react";
-import {fetchCategories, fetchProducts} from "../services/api.js";
-import {getCategoryTheme, getProductCategories} from "../services/utilities.js";
+import {fetchCategories, fetchProducts} from "../../../shared/services/api.js";
+import {getCategoryTheme, getProductCategories} from "../../../shared/services/utilities.js";
 
 const fakeCount = [12, 87, 3, 56, 91, 44, 18, 60, 72, 5, 29, 100, 8, 67, 39, 14, 77, 2, 95, 33, 48, 21, 64, 10]
 

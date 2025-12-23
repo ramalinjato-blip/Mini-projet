@@ -1,7 +1,7 @@
 import React from "react";
 import {useSearchParams} from "react-router-dom";
 import Drawer from "./Drawer.jsx";
-import AddCart from "./AddCart.jsx";
+import AddCart from "../../../features/sales/components/AddCart.jsx";
 
 const componentMap = {
   addCart: AddCart,

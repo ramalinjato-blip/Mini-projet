@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNavigate} from "react-router-dom";
-import {getCategoryTheme} from "../services/utilities.js";
+import {getCategoryTheme} from "../../../shared/services/utilities.js";
 
 const ProductCard = ({ name, price, categories }) => {
 

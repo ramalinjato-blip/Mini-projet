@@ -1,7 +1,7 @@
 import React from 'react'
-import PageHeader from "../PageHeader.jsx";
+import PageHeader from "../../../shared/components/PageHeader.jsx";
 import {NavLink, Outlet} from "react-router-dom";
-import Container from "../Container.jsx";
+import Container from "../../../shared/components/UI container/Container.jsx";
 
 const mainButton = [
   { text: "nouveau", index: true },
